@@ -1,13 +1,18 @@
-Lottery App Contract
+# Lottery App Contract
+
 In this Solidity program, I've created a stake mining-inspired gambling app where users can stake cryptocurrency to participate in lottery rounds. Each stake represents a ticket for a chance to win a jackpot, with winning odds based on the amount staked. Users can monitor ongoing lotteries, view historical results, and withdraw their winnings.
 
-Description
+## Description
+
 This application provides seamless integration with MetaMask for wallet connectivity, enabling users to securely deposit cryptocurrency. Players engage in an exciting game where the objective is to avoid mines to double their deposited amount, while hitting a mine results in the loss of all deposited funds. Alongside the game, the app includes a dynamic leaderboard that showcases top performers based on their winnings. Additionally, a comprehensive history function allows users to review their gameplay outcomes, transaction details, and overall performance over time.
 
-Getting Started
-Executing Program
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at Remix Ethereum.
+## Getting Started
 
+### Executing Program
+
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix Ethereum](https://remix.ethereum.org/).
+
+```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
@@ -118,14 +123,18 @@ contract Assessment {
         return history[_user];
     }
 }
+```
 After cloning the github, you will want to do the following to get the code running on your computer.
 
-Inside the project directory, in the terminal type: npm i
-Open two additional terminals in your VS code
-In the second terminal type: npx hardhat node
-In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-Back in the first terminal, type npm run dev to launch the front-end.
-After this, the project will be running on your localhost. Typically at http://localhost:3000/
+1. Inside the project directory, in the terminal type: npm i
+2. Open two additional terminals in your VS code
+3. In the second terminal type: npx hardhat node
+4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
+5. Back in the first terminal, type npm run dev to launch the front-end.
 
-License
+After this, the project will be running on your localhost. 
+Typically at http://localhost:3000/
+
+
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
